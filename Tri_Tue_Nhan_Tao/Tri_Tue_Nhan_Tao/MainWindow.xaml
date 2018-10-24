@@ -1,0 +1,35 @@
+﻿<Window x:Class="Tri_Tue_Nhan_Tao.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="592" Width="803">
+    <Canvas x:Name="reset_game" HorizontalAlignment="Left" Width="803" Margin="0,0,-8,-1">
+        <Grid x:Name="CheckersGrid" Height="480" Width="480" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Canvas.Left="10" Canvas.Top="32">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
+        </Grid>
+        <Button Content="Reset Game" Canvas.Left="520" Canvas.Top="32" Width="74" Click="Button_Click_1"/>
+        <Image Height="60" Canvas.Left="520" Canvas.Top="116" Width="60" Source="red.PNG"/>
+        <Label Content="máy" Canvas.Left="588" Canvas.Top="140" Width="72"/>
+        <Image Height="60" Canvas.Left="520" Canvas.Top="198" Width="60" Source="black.PNG"/>
+        <Label Content="người chơi" Canvas.Left="594" Canvas.Top="230" Width="66"/>
+        <Label Content="luật chơi: &#xD;&#xA;- mỗi bên đi một lượt.&#xD;&#xA;- Chỉ được đi vào ô màu trắng.&#xD;&#xA;- Nếu không đi được nữa hoặc hết quân sẽ thua&#xD;&#xA;- đi đến cuối bàn cờ sẽ được phong làm vua&#xD;&#xA;- Vua sẽ được đi lùi&#xD;&#xA;- Nếu có thể nhảy qua đầu đối thủ thì diết &#xD;&#xA;quân của đối thủ" Canvas.Left="495" Canvas.Top="297" Height="197" Width="298"/>
+    </Canvas>
+</Window>
